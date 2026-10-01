@@ -1,0 +1,16 @@
+name: CI
+
+on: pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "building"
+      - run: sleep 60
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "testing"
+      - run: sleep 60
